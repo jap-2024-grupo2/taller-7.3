@@ -21,6 +21,11 @@ document.getElementById("regBtn").addEventListener("click", function(evento){
         return
     }
 
+    if (password1.length < 6 || password2.length < 6) {
+        showAlertError()
+        return
+    }
+
     showAlertSuccess();
 
 })
